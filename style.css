@@ -67,6 +67,36 @@ img{
 }
 
 /* Estilos para el encabezado */
+
+/* Añade este estilo para ocultar el submenú por defecto */
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Añade estilos para mostrar el submenú al pasar el ratón */
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea entre elementos */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.submenu-content a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #f5f5f5;
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -92,6 +122,8 @@ img{
     text-transform: uppercase;
     font-weight: 600;
 }
+
+
 
 /* Estilos para elementos de la barra de navegación */
 .menu .navbar ul li {
