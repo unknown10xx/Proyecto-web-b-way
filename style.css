@@ -292,17 +292,22 @@ th, td {
 }
 
 /* Estilos para el pie de página */
+/* Estilos Generales del Pie de Página */
 .footer {
     padding: 50px 0;
     background-color: #111111;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-between;
 }
 
-.link h3{
+/* Estilos de la Navegación */
+.navegacion h3,
+.medios-de-Pago h3,
+.contactanos h3,
+.redes-sociales h3 {
     font-size: 18px;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
@@ -310,11 +315,51 @@ th, td {
     margin-bottom: 20px;
 }
 
-.link a{
-    font-size: 16px;
+.navegacion a,
+/* Estilos para la sección "Medios de Pago" */
+.medios-de-Pago {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.medios-de-Pago ul {
+    list-style: none; /* Elimina los estilos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Coloca las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.medios-de-Pago img {
+    max-width: 100px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Hacer que la altura sea automática para mantener la proporción */
+    margin: 10px; /* Agrega espacio entre las imágenes */
+}
+.contactanos a,
+
+.redes-sociales .fab {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffffff; 
+}
+
+
+/* Estilos de los Íconos de Redes Sociales */
+.redes-sociales .fa {
+    font-size: 24px;
+    margin-right: 10px;
     color: #DCDCDC;
-    display: block;
-    margin-bottom: 10px;
+}
+
+/* Diseño Responsivo */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /*Estilos para dispositivos moviles*/
